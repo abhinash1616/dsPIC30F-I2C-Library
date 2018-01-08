@@ -1,10 +1,12 @@
-#include "i2c.h"
+//AB:dspic
 
+#include "i2c.h"
+#define I2C_BAUDRATE 400000
 void I2C_Init(void)
 {
 
     I2CCONbits.I2CEN = 0;	
-	I2CCONbits.I2CSIDL 	= 0;
+        I2CCONbits.I2CSIDL 	= 0;
 	I2CCONbits.IPMIEN 	= 0;
 	I2CCONbits.A10M		= 0;
 	I2CCONbits.DISSLW 	= 1;
